@@ -53,15 +53,5 @@ public class MovingPlatform : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        other.transform.SetParent(transform); //set the player obj as a child to the moving platform parent obj
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        other.transform.SetParent(null); // Removes the player obj as a child obj from the moving platform parent obj
-    }
-
 
 }

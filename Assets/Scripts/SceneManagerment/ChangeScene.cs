@@ -27,4 +27,12 @@ public class ChangeScene : MonoBehaviour
     {
         Application.Quit();
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag =="Player")
+        {
+            SceneManager.LoadScene(levelName);
+        }
+    }
 }

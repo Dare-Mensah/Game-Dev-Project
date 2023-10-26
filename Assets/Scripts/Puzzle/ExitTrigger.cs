@@ -29,5 +29,13 @@ public class ExitTrigger : MonoBehaviour
             Cursor.visible = false;
 
         }
+
+    }
+
+    IEnumerator WaitBeforeChange()
+    {
+        yield return new WaitForSeconds(3);
+
+        PuzzleCam.SetActive(false);
     }
 }

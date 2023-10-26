@@ -7,16 +7,15 @@ using UnityEngine.UI;
 public class PuzzleComplete : MonoBehaviour
 {
     public GameObject WinText;
-
-    public GameObject Platform;
+    public bool Win = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
             WinText.SetActive(true);
+            Win = true;
 
-            Platform.SetActive(true);
 
         }
     }
