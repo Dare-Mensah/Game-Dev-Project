@@ -13,9 +13,7 @@ public class Timer : MonoBehaviour
     public float startingTime;
 
     public GameObject WinText;
-    public GameObject HiText;
-    public GameObject PressEText;
-    public GameObject thankYouText;
+
 
     public GameObject player;
     public GameObject playerCam;
@@ -23,7 +21,14 @@ public class Timer : MonoBehaviour
     public GameObject TimesUp;
     public GameObject CharacterTrigger;
 
+
     public GameObject platform;
+
+    public GameObject playerGreeting;
+    public GameObject playerYes;
+    public GameObject playerNo;
+
+
     public bool notRunning;
 
     // Start is called before the first frame update
@@ -44,38 +49,34 @@ public class Timer : MonoBehaviour
         //int seconds = Mathf.FloorToInt(currentTime % 60);
         timerText.text = currentTime.ToString("00:00");
 
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Escape)) //leave before time runs out or before the player wins
         {
             currentTime = startingTime;
             playerCam.SetActive(true);
             puzzleCam.SetActive(false);
             player.SetActive(true);
+            playerYes.SetActive(false);
 
         }
 
-        if(currentTime > 1 && WinText.activeInHierarchy == true)
+        if(currentTime > 1 && WinText.activeInHierarchy == true) // if the player wins
         {
             player.SetActive(true);
             StartCoroutine(WaitBeforeChange());
-            thankYouText.SetActive(true);
-            HiText.SetActive(false);
-            PressEText.SetActive(false);
             CharacterTrigger.SetActive(false);
             platform.SetActive(true);
-
-            
+            playerYes.SetActive(false);
 
         }
 
-        if (currentTime <=1 && WinText.activeInHierarchy == false)
+        if (currentTime <=1 && WinText.activeInHierarchy == false) // if the player loses
         {
             TimesUp.SetActive(true);
             StartCoroutine(WaitBeforeChange());
             player.SetActive(true);
             CharacterTrigger.SetActive(false);
-            HiText.SetActive(false);
-            PressEText.SetActive(false);
-            
+            playerYes.SetActive(false);
+
         }
 
 
