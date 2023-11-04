@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Cinemachine;
 
 public class EnterCharacterTrigger : MonoBehaviour
 {
@@ -11,70 +12,80 @@ public class EnterCharacterTrigger : MonoBehaviour
     public bool nextLineComplete;
     private int index;
 
-    public GameObject npcTrigger;
     public GameObject puzzlCam;
     public GameObject npcCam;
     public GameObject Player;
 
-    public GameObject playergreet;
-    public GameObject playerYes;
-    public GameObject playerNo;
-
-
+    public GameObject next;
+    public GameObject escape;
+    public GameObject options;
+    public GameObject dialogueBox;
 
 
     // Start is called before the first frame update
     void Start()
     {
-      
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))//yes
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (textComponent.text == lines[index])
             {
                 NextLine();
-
-                if (nextLineComplete == true)
-                {
-                    npcCam.SetActive(false);
-                    textComponent.text = string.Empty;
-                    puzzlCam.SetActive(true);
-                    StartCoroutine(WaitForCam());
-                    StartCoroutine(WaitForCharaacter());
-                    playerYes.SetActive(true);
-                    playergreet.SetActive(false);
-                    //npcTrigger.SetActive(false);
-                }
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
             }
 
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                npcCam.SetActive(false);
+                dialogueBox.SetActive(false);
+                textComponent.text = string.Empty;
+                StopAllCoroutines();
+            }
+
+            if (index == lines.Length - 1)
+            {
+                StartCoroutine(WaitForOptions());
+            }
         }
 
-        if (Input.GetKey(KeyCode.F)) //no
+        if (Input.GetKeyDown(KeyCode.O) && index == lines.Length - 1)
         {
             npcCam.SetActive(false);
+            dialogueBox.SetActive(false);
             textComponent.text = string.Empty;
-            playerNo.SetActive(true);
-            playergreet.SetActive(false);
+            options.SetActive(false);
+            puzzlCam.SetActive(true);
+            //StartCoroutine(WaitForCharaacter());
 
         }
+        if (Input.GetKeyDown(KeyCode.P) && index == lines.Length - 1)
+        {
+            npcCam.SetActive(false);
+            dialogueBox.SetActive(false);
+            textComponent.text = string.Empty;
+            options.SetActive(false);
+            StopAllCoroutines();
+        }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            npcCam.SetActive(false);
+            dialogueBox.SetActive(false);
+            textComponent.text = string.Empty;
+            options.SetActive(false);
+            StopAllCoroutines();
+        }
 
-
-        //if (Enter == true)
-        //{
-            //PressEText3.SetActive(true);
-            //StartText1.SetActive(true);
-        //}
-
-        //if (Enter && MidText2.activeInHierarchy == true &&YesText.activeInHierarchy == true )
-        //{
-           // PressEText3.SetActive(false);
-            //StartText1.SetActive(false);
-        //}
     }
 
     IEnumerator WaitForCharaacter()
@@ -85,39 +96,17 @@ public class EnterCharacterTrigger : MonoBehaviour
     }
 
 
-    IEnumerator WaitForCam()
-    {
-        yield return new WaitForSeconds(2);
 
-        puzzlCam.SetActive(true);
+
+    IEnumerator WaitForOptions()
+    {
+        yield return new WaitForSeconds(1);
+
+        options.SetActive(true);
     }
 
 
 
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            npcCam.SetActive(false);
-            textComponent.text = string.Empty;
-            playergreet.SetActive(false);
-            playerYes.SetActive(false);
-            playerNo.SetActive(false);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            npcCam.SetActive(true);
-            textComponent.text = string.Empty;
-            StartDialogue();
-            playergreet.SetActive(true);
-        }
-
-    }
     void StartDialogue()
     {
         index = 0;
@@ -133,6 +122,14 @@ public class EnterCharacterTrigger : MonoBehaviour
         }
     }
 
+    IEnumerator WaitForChange()
+    {
+
+        next.SetActive(true);
+        escape.SetActive(true);
+        yield return new WaitForSeconds(2);
+    }
+
     void NextLine()
     {
         if (index < lines.Length - 1)
@@ -140,12 +137,37 @@ public class EnterCharacterTrigger : MonoBehaviour
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
-            nextLineComplete = true;
+
         }
         else
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            npcCam.SetActive(false);
+            dialogueBox.SetActive(false);
+            textComponent.text = string.Empty;
+            options.SetActive(false);
+            StopAllCoroutines();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            npcCam.SetActive(true);
+            dialogueBox.SetActive(true);
+            textComponent.text = string.Empty;
+            StartDialogue();
+            StartCoroutine(WaitForChange());
+        }
+
     }
 
 
