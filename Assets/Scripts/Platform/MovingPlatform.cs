@@ -45,11 +45,12 @@ public class MovingPlatform : MonoBehaviour
         previousWayPoint = _wayPointPath.GetWayPoint(targetWayPointIndex);
         targetWayPointIndex = _wayPointPath.getNextWayPointIndex(targetWayPointIndex);
         targetWayPoint = _wayPointPath.GetWayPoint(targetWayPointIndex);
+        //The target way point is the next watpoint form way point index.
 
         elapsedTime = 0;
 
         float distanceToWayPoint = Vector3.Distance(previousWayPoint.position, targetWayPoint.position);
-        timeToWayPoint = distanceToWayPoint / speed;
+        timeToWayPoint = distanceToWayPoint / speed; //the time to get there is dependent on the distance and speed
 
     }
 
