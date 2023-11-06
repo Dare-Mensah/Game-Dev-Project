@@ -11,7 +11,7 @@ public class PlayerLookAt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Player.transform);
+        transform.LookAt(Player.transform); // transforms the npc positon based on the player position
     }
 
 
