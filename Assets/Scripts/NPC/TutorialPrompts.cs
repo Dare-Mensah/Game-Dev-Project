@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TutorialPrompts : MonoBehaviour
+public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY TUTORIAL NPC BUT IS NOW USED FOR ALL
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -24,11 +24,11 @@ public class TutorialPrompts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E)) //checks if the user has inputted E then it goes to the next line of text
         {
             if (textComponent.text == lines[index])
             {
-                NextLine();
+                NextLine(); 
             }
             else
             {
@@ -37,7 +37,7 @@ public class TutorialPrompts : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.X))
+        if(Input.GetKeyDown(KeyCode.X)) //If the user pressed X the then the dialogue box closes
         {
             npcCam.SetActive(false);
             dialogueBox.SetActive(false);
@@ -90,7 +90,7 @@ public class TutorialPrompts : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
-        {
+        { //Check if the user enters the trigger then start dialogue
             npcCam.SetActive(true);
             dialogueBox.SetActive(true);
             textComponent.text = string.Empty;
@@ -102,7 +102,7 @@ public class TutorialPrompts : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if(other.gameObject.tag == "Player")
-        {
+        { //Checks if the user exits the trigger then stops dialogue
             npcCam.SetActive(false);
             dialogueBox.SetActive(false);
             textComponent.text = string.Empty;
