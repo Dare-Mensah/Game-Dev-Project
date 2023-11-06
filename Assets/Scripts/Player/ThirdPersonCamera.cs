@@ -43,6 +43,7 @@ public class ThirdPersonCamera : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchCamPos(CamraPosition.Basic);
+        //NOT NECESSARY
         if (Input.GetKeyDown(KeyCode.Alpha2)) SwitchCamPos(CamraPosition.Focus);
         if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchCamPos(CamraPosition.Puzzle);
 
@@ -74,6 +75,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void SwitchCamPos(CamraPosition newPosition)
     {
+        //NOT NECESSARY
         BasicCam.SetActive(true);
         FocusCam.SetActive(false);
         PuzzleCam.SetActive(false);
