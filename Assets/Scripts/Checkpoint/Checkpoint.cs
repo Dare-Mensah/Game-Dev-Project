@@ -11,7 +11,7 @@ public class Checkpoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-        {
+        { //Checks if the player has enetred the collder and respawns them at the clostse checkpoint
             lastCheckpoint = GetClosestCheckpoint(other.transform);
             RespawnPlayer(other.transform);
         }
@@ -34,7 +34,7 @@ public class Checkpoint : MonoBehaviour
         foreach (Transform checkpoint in checkpoints)
         {
             float distance = Vector3.Distance(player.transform.position, checkpoint.position);
-            if (distance < closestDistance)
+            if (distance < closestDistance) //Checks if the disatance is less than the closets distnce
             {
                 closestCheckpoint = checkpoint;
                 closestDistance = distance;
