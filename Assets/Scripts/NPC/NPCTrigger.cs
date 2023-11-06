@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-public class NPCTrigger : MonoBehaviour
+public class NPCTrigger : MonoBehaviour //SCRIPT IS CURRENTLY NOT IN  USE WILL BE DELETED I  FURTURE ITERATIONS
 {
 
     public GameObject greetingText;
