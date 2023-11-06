@@ -30,7 +30,7 @@ public class EnterCharacterTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)) //if the player presses E then it goes to the second line
         {
             if (textComponent.text == lines[index])
             {
@@ -45,7 +45,7 @@ public class EnterCharacterTrigger : MonoBehaviour
 
 
         if (Input.GetKeyDown(KeyCode.Escape))
-        {
+        {//If the player presses the escape button the dialogue closes
             npcCam.SetActive(false);
             dialogueBox.SetActive(false);
             textComponent.text = string.Empty;
@@ -99,7 +99,7 @@ public class EnterCharacterTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
-        {
+        {//Checks if the player has eneter the trigger then starts the dialogue
             npcCam.SetActive(true);
             dialogueBox.SetActive(true);
             textComponent.text = string.Empty;
@@ -111,7 +111,7 @@ public class EnterCharacterTrigger : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
-        {
+        {//Checks if the player has exited the trigger then stops the dialogue
             npcCam.SetActive(false);
             dialogueBox.SetActive(false);
             textComponent.text = string.Empty;
