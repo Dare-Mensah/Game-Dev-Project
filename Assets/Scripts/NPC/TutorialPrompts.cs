@@ -37,7 +37,7 @@ public class TutorialPrompts : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.X))
         {
             npcCam.SetActive(false);
             dialogueBox.SetActive(false);

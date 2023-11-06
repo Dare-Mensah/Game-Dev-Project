@@ -43,7 +43,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentTime >1 && puzzleCam.activeInHierarchy == true && !notRunning)
+        if(currentTime >1 && puzzleCam.activeInHierarchy == true && !notRunning) //Decrements the timer every second
         {
             currentTime -= 1 * Time.deltaTime;
         }
@@ -52,25 +52,21 @@ public class Timer : MonoBehaviour
         //int seconds = Mathf.FloorToInt(currentTime % 60);
         timerText.text = currentTime.ToString("00:00");
 
-        if (Input.GetKey(KeyCode.Escape)) //leave before time runs out or before the player wins
-        {
-            currentTime = startingTime;
-            playerCam.SetActive(true);
-            puzzleCam.SetActive(false);
-            player.SetActive(true);
+        //if (Input.GetKey(KeyCode.Escape)) //leave before time runs out or before the player wins
+        //{
+            //currentTime = startingTime;
+            //playerCam.SetActive(true);
+            //puzzleCam.SetActive(false);
+            //player.SetActive(true);
 
-        }
+        //}
 
         if(currentTime > 1 && WinText.activeInHierarchy == true) // if the player wins
         {
             player.SetActive(true);
             TimesUp.SetActive(false);
             StartCoroutine(WaitBeforeChange());
-            CharacterTrigger.SetActive(false);
             platform.SetActive(true);
-            puzzleStart.SetActive(false);
-            currNPC.SetActive(false);
-            nextNPC.SetActive(true);
 
         }
 
@@ -79,11 +75,7 @@ public class Timer : MonoBehaviour
             TimesUp.SetActive(true);
             StartCoroutine(WaitBeforeChange());
             player.SetActive(true);
-            CharacterTrigger.SetActive(false);
-            altNPC.SetActive(true);
-            currNPC.SetActive(false);
-            puzzleStart.SetActive(false);
-            platform.SetActive(true);
+
 
 
         }
