@@ -21,20 +21,25 @@ public class Timer : MonoBehaviour
     public GameObject TimesUp;
     public GameObject CharacterTrigger;
 
-
+    public GameObject puzzleStart;
     public GameObject platform;
+    //public GameObject ball;
 
-    public GameObject playerGreeting;
-    public GameObject playerYes;
-    public GameObject playerNo;
+    public GameObject currNPC;
+    public GameObject nextNPC;
+    public GameObject altNPC;
 
+   
 
     public bool notRunning;
+
+    Vector3 originalPos;
 
     // Start is called before the first frame update
     void Start()
     {
         currentTime = startingTime;
+
     }
 
     // Update is called once per frame
@@ -49,23 +54,25 @@ public class Timer : MonoBehaviour
         //int seconds = Mathf.FloorToInt(currentTime % 60);
         timerText.text = currentTime.ToString("00:00");
 
-        if (Input.GetKey(KeyCode.Escape)) //leave before time runs out or before the player wins
-        {
-            currentTime = startingTime;
-            playerCam.SetActive(true);
-            puzzleCam.SetActive(false);
-            player.SetActive(true);
-            playerYes.SetActive(false);
+        //if (Input.GetKey(KeyCode.Escape)) //leave before time runs out or before the player wins
+        //{
+            //currentTime = startingTime;
+            //playerCam.SetActive(true);
+            //puzzleCam.SetActive(false);
+            //player.SetActive(true);
 
-        }
+        //}
 
         if(currentTime > 1 && WinText.activeInHierarchy == true) // if the player wins
         {
             player.SetActive(true);
+            TimesUp.SetActive(false);
             StartCoroutine(WaitBeforeChange());
             CharacterTrigger.SetActive(false);
             platform.SetActive(true);
-            playerYes.SetActive(false);
+            puzzleStart.SetActive(false);
+            currNPC.SetActive(false);
+            nextNPC.SetActive(true);
 
         }
 
@@ -75,7 +82,11 @@ public class Timer : MonoBehaviour
             StartCoroutine(WaitBeforeChange());
             player.SetActive(true);
             CharacterTrigger.SetActive(false);
-            playerYes.SetActive(false);
+            altNPC.SetActive(true);
+            currNPC.SetActive(false);
+            puzzleStart.SetActive(false);
+            platform.SetActive(true);
+
 
         }
 

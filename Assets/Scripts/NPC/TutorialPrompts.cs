@@ -35,15 +35,6 @@ public class TutorialPrompts : MonoBehaviour
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
-
-
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                npcCam.SetActive(false);
-                dialogueBox.SetActive(false);
-                textComponent.text = string.Empty;
-                StopAllCoroutines();
-            }
         }
 
         if(Input.GetKeyDown(KeyCode.Escape))
