@@ -43,20 +43,20 @@ public class CollectItem : MonoBehaviour
 
         }
         
-        if(puzzleCam.activeInHierarchy == true)
+        if(puzzleCam.activeInHierarchy == true) //CHECKS IF THE PUZZLE CAM IS ACTIVE THEN SETS THE SPAWNER TO TRUE
         {
             spawner.SetActive(true);
         }
 
-        if(Input.GetKey(KeyCode.Escape))
-        {
-            score = 0;
-        }
+        //if(Input.GetKey(KeyCode.Escape))
+        //{
+            //score = 0;
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Item")
+        if(other.gameObject.tag == "Item") //CHECKS IF THE BALL INTERACTS WITH THE CUBE THEN INCREMENTS THE SCORE BY 1
         {
             score += 1;
         }

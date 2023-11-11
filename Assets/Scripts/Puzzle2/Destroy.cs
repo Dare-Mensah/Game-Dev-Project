@@ -15,7 +15,7 @@ public class Destroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.name == "Cube(Clone)")
+        if (gameObject.name == "Cube(Clone)") //CHECKS IF THE GAMEOBJECT IS CUBE(CLONE) AND REMOVES ALL THE CUBES GENERATED FROM SPAWNER
         {
             Destroy(gameObject, 5);
         }
@@ -23,7 +23,7 @@ public class Destroy : MonoBehaviour
     private void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            Destroy(gameObject); //DESTROYS THE CUBE IF IT COLLDIES WITH THE BALL
            
         }
 

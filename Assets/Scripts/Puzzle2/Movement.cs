@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(Input.GetAxis("Horizontal")/speed,0,0);
+        transform.position += new Vector3(Input.GetAxis("Horizontal")/speed,0,0); //MOVES BALL ON THE HORIZONTAL AXIS
     }
     private void OnCollisionEnter(Collision collision) {
         counter=counter+1;

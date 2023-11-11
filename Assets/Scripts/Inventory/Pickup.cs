@@ -8,10 +8,10 @@ public class Pickup : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player")) // IF THE PLAYER PICKS UP AND OBJECT
         {
-            Inventory.instance.AddItem(item);
-            Destroy(gameObject);
+            Inventory.instance.AddItem(item); //WE ADD ITEM 
+            Destroy(gameObject); //DESTROY THE OBJECT
         }
     }
 }

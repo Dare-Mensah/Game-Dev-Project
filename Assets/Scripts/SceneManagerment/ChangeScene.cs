@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public string levelName;
+    public string levelName; //teaks level name in script
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class ChangeScene : MonoBehaviour
 
     public void ClickButton()
     {
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene(levelName); //loads the scene according to the level name string
     }
 
     public void Quit()
@@ -29,8 +29,8 @@ public class ChangeScene : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag =="Player")
+    { //for tutorial level
+        if(other.gameObject.tag =="Player") 
         {
             SceneManager.LoadScene(levelName);
         }

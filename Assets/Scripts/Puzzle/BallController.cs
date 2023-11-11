@@ -19,12 +19,12 @@ public class BallController : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveHorizontal = Input.GetAxis("Horizontal");
+        moveHorizontal = Input.GetAxis("Horizontal"); //MOVES PLAYER IN HORIZONTAL AND VERTICAL AXIS
         moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        rB.AddForce(movement * Speed);
+        rB.AddForce(movement * Speed); // ADDS FORCE IN THE DIRECTION OF MOVEMENT TO RGIDBODY
 
         //print(moveHorizontal);
         //print(moveVertical);

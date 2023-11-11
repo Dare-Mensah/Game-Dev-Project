@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     public List<Transform> checkpoints = new List<Transform>(); // List of checkpoint Transforms.
-    private Transform lastCheckpoint; // Store the last checkpoint touched by the player.
+    private Transform lastCheckpoint; // Stores the last checkpoint closest to the player.
     public GameObject player;
 
     private void OnTriggerEnter(Collider other)
@@ -22,7 +22,7 @@ public class Checkpoint : MonoBehaviour
         if (lastCheckpoint != null)
         {
             player.transform.position = lastCheckpoint.position;
-            // You can also add other logic to reset player state or perform other actions here.
+            //  Logic to reset player transform poistion to the closest checkpoint.
         }
     }
 

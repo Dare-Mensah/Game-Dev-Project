@@ -49,14 +49,14 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
 
     void StartDialogue()
     {
-        index = 0;
+        index = 0;// SATRTS AT FIRST LINE OF DIALOGUE
         StartCoroutine(TypeLine());
     }
 
 
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray()) //ITERATES THROUGH EACH CHARACTER IN OF THE WORD IN THE INDEX
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -73,11 +73,11 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
 
 
     void NextLine()
-    {
+    { //MOVES TO THE NEXT LINE OF DIALOGUE
         if(index < lines.Length - 1)
         {
             index++;
-            textComponent.text = string.Empty;
+            textComponent.text = string.Empty; // REMOVES THE PREVIOUS LINE OF TEXT
             StartCoroutine(TypeLine());
 
         }

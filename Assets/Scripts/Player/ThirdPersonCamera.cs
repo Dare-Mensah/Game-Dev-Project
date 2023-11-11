@@ -17,8 +17,8 @@ public class ThirdPersonCamera : MonoBehaviour
     public Transform focusLookAt;
 
     public GameObject BasicCam;
-    public GameObject FocusCam;
-    public GameObject PuzzleCam;
+    //public GameObject FocusCam;
+    //public GameObject PuzzleCam;
 
     public CamraPosition currentstyle;
 
@@ -44,8 +44,8 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchCamPos(CamraPosition.Basic);
         //NOT NECESSARY
-        if (Input.GetKeyDown(KeyCode.Alpha2)) SwitchCamPos(CamraPosition.Focus);
-        if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchCamPos(CamraPosition.Puzzle);
+       // if (Input.GetKeyDown(KeyCode.Alpha2)) SwitchCamPos(CamraPosition.Focus);
+        //if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchCamPos(CamraPosition.Puzzle);
 
 
 
@@ -73,16 +73,16 @@ public class ThirdPersonCamera : MonoBehaviour
         }
     }
 
-    private void SwitchCamPos(CamraPosition newPosition)
+    private void SwitchCamPos(CamraPosition newPosition) //IF WE WANT TO CHANGE THE POSITION OF THE CAMERA WITH THE PLAYER IN FURTURE ITERATIONS
     {
         //NOT NECESSARY
         BasicCam.SetActive(true);
-        FocusCam.SetActive(false);
-        PuzzleCam.SetActive(false);
+        //FocusCam.SetActive(false);
+        //PuzzleCam.SetActive(false);
 
         if (newPosition == CamraPosition.Basic) BasicCam.SetActive(true);
-        if (newPosition == CamraPosition.Focus) FocusCam.SetActive(true);
-        if (newPosition == CamraPosition.Puzzle) PuzzleCam.SetActive(true);
+        //if (newPosition == CamraPosition.Focus) FocusCam.SetActive(true);
+        //if (newPosition == CamraPosition.Puzzle) PuzzleCam.SetActive(true);
 
         currentstyle = newPosition;
 

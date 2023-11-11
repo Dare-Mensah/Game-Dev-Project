@@ -13,13 +13,13 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", _delay, _delay);
+        InvokeRepeating("Spawn", _delay, _delay); //REPEATS THE INSTANTIATE
 
     }
 
     void Spawn()
     {
-        Instantiate(_cube, transform.position, Quaternion.identity);
+        Instantiate(_cube, transform.position, Quaternion.identity); //INSTATIATES A NEW CUBE 
     }
 
     // Update is called once per frame
@@ -27,8 +27,8 @@ public class Spawner : MonoBehaviour
     {
 
         if(WinText.activeInHierarchy == true || timeUp.activeInHierarchy == true)
-        {
-            CancelInvoke();
+        { //IF PLAYER WINS THEN STOPS SPAWNING CUBES
+            CancelInvoke(); 
         }
     }
 }

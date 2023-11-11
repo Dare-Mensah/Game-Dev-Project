@@ -64,7 +64,7 @@ public class Timer : MonoBehaviour
         //}
 
         if(currentTime > 1 && WinText.activeInHierarchy == true) // if the player wins
-        {
+        { //SETS THE PLAYER TO TRUE SETS THE NEXT PLATOFRM TO ACTIVE AND SETS THE (WIN) NPC  TO TRUE
             player.SetActive(true);
             TimesUp.SetActive(false);
             StartCoroutine(WaitBeforeChange());
@@ -77,7 +77,7 @@ public class Timer : MonoBehaviour
         }
 
         if (currentTime <=1 && WinText.activeInHierarchy == false) // if the player loses
-        {
+        {//SETS THE PLAYER TO TRUE SETS THE NEXT PLATOFRM TO ACTIVE AND SETS THE (LOSE) NPC  TO TRUE
             TimesUp.SetActive(true);
             StartCoroutine(WaitBeforeChange());
             player.SetActive(true);

@@ -18,7 +18,7 @@ public class Puzzle3Check : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (puzzleCam.activeInHierarchy == true)
+        if (puzzleCam.activeInHierarchy == true) //check if the puzzle cam is active then sets the puzzle player to active
         {
             playerPuzzle3.SetActive(true);
         }

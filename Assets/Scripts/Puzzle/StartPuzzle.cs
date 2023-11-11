@@ -20,10 +20,10 @@ public class StartPuzzle : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) // IF THE PLAYER ENTERS THE TRIGGER
     {
-        puzzleCam.SetActive(true);
-        StartCoroutine(WaitForPlayer());
+        puzzleCam.SetActive(true); //SWITCH TO PUZZLE CAMERA
+        StartCoroutine(WaitForPlayer()); //DELAYS THE TIME FOR THE CHARCTER TO DISSAPEAR
     }
 
 

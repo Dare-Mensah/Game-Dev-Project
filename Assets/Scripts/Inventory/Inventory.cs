@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if(CountC == 3)
+        if(CountC == 3) // for tutroial purpose SET TO BE CHNAGED
         {
             NPC.SetActive(true);
         }
@@ -37,11 +37,11 @@ public class Inventory : MonoBehaviour
     {
         bool itemExists = false;
 
-        foreach (Item item in items)
+        foreach (Item item in items) // iterates through each item in the inventory
         {
-            if(item.name == itemToAdd.name)
+            if(item.name == itemToAdd.name) // if the item is the item that we want to add
             {
-                item.count += itemToAdd.count;
+                item.count += itemToAdd.count; // it increments the amount of that item in the inventory
                 itemExists = true;
                 break;
             }
@@ -55,12 +55,12 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(Item itemToRemove)
     {
-        foreach (var item in items)
+        foreach (var item in items) // iterates through each item in the inventory
         {
-            if(item.name == itemToRemove.name)
+            if(item.name == itemToRemove.name) // if the item is the item that we want to remove
             {
-                item.count -= itemToRemove.count;
-                if(item.count <= 0)
+                item.count -= itemToRemove.count; // it decremnets the amount of that item in the inventory
+                if(item.count <= 0) // if the item is less than or equal to zero we remove the item entriely
                 {
                     items.Remove(itemToRemove);
                 }
@@ -68,6 +68,6 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        Debug.Log(itemToRemove.count + " " + itemToRemove.name + "removed from inventory");
+        Debug.Log(itemToRemove.count + " " + itemToRemove.name + "removed from inventory");// for devbugging purposes 
     }
 }

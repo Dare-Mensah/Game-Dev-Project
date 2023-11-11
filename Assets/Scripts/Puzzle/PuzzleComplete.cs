@@ -5,15 +5,15 @@ using TMPro;
 using UnityEngine.UI;
 
 public class PuzzleComplete : MonoBehaviour
-{
+{ //TO BE CHNAGED 
     public GameObject WinText;
     public bool Win = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player") //CHECKS IF BALL ENTERS TRIGGER
         {
-            WinText.SetActive(true);
+            WinText.SetActive(true); //SETS THE WIN TEXT TO TRUE
             Win = true;
 
 
