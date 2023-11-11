@@ -18,7 +18,7 @@ public class WayPointPath : MonoBehaviour
 
     public Transform GetWayPoint(int wayPointIndex)
     {
-        return transform.GetChild(wayPointIndex);
+        return transform.GetChild(wayPointIndex);//returns the transform of the way point idex
     }
 
     public int getNextWayPointIndex(int currentWayPointIndex)
@@ -27,7 +27,7 @@ public class WayPointPath : MonoBehaviour
 
         if (nextWayPointIndex == transform.childCount)
         {
-            nextWayPointIndex = 0;
+            nextWayPointIndex = 0; //sets the index to zero to start from the begining.
         }
 
         return nextWayPointIndex;
