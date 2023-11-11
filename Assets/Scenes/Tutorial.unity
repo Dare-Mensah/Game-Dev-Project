@@ -56308,6 +56308,7 @@ GameObject:
   - component: {fileID: 2080347473}
   - component: {fileID: 2080347472}
   - component: {fileID: 2080347471}
+  - component: {fileID: 2080347475}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -56401,6 +56402,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080347475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080347470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fd56b43bd83b24db12e60086dd23e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpoints:
+  - {fileID: 539430150}
+  - {fileID: 1403718649}
+  - {fileID: 54336929}
+  player: {fileID: 1296367009}
 --- !u!1 &2081949112
 GameObject:
   m_ObjectHideFlags: 0
