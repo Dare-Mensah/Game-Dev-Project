@@ -39,7 +39,7 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
 
         if(Input.GetKeyDown(KeyCode.X)) //If the user pressed X the then the dialogue box closes
         {
-            npcCam.SetActive(false);
+            //npcCam.SetActive(false);
             dialogueBox.SetActive(false);
             textComponent.text = string.Empty;
             StopAllCoroutines();
@@ -91,7 +91,7 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
     {
         if(other.gameObject.tag == "Player")
         { //Check if the user enters the trigger then start dialogue
-            npcCam.SetActive(true);
+            //npcCam.SetActive(true);
             dialogueBox.SetActive(true);
             textComponent.text = string.Empty;
             StartDialogue();
@@ -103,7 +103,7 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
     {
         if(other.gameObject.tag == "Player")
         { //Checks if the user exits the trigger then stops dialogue
-            npcCam.SetActive(false);
+            //npcCam.SetActive(false);
             dialogueBox.SetActive(false);
             textComponent.text = string.Empty;
             StopAllCoroutines();
