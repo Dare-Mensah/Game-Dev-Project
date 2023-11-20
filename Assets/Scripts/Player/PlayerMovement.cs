@@ -26,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform orientation; // current player orientation
 
+    [Header("Sprite")]
+    public SpriteRenderer sR;
+
     float horizontalInput;
     float verticalInput;
 
@@ -62,12 +65,23 @@ public class PlayerMovement : MonoBehaviour
             rB.drag = groundedDrag;
         else
             rB.drag = 0;
+
+
+        if (!sR.flipX && verticalInput < 0) //flips the sprite depening on where the player is facing
+        {
+            sR.flipX = true;
+
+        }
+        else if (sR.flipX && verticalInput > 0)
+        {
+            sR.flipX = false;
+        }
     }
 
     public void MyInput()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal"); //W and S
-        verticalInput = Input.GetAxisRaw("Vertical"); // A and D
+        horizontalInput = Input.GetAxisRaw("Vertical"); //W and S
+        verticalInput = Input.GetAxisRaw("Horizontal"); // A and D
 
         if(Input.GetKey(jumpKey) && readyToJump && grounded) // if ready to jump is true and the player is grounded
         {
@@ -83,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         //move Direction
-        moveDir = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        moveDir = orientation.forward * verticalInput + orientation.right * -horizontalInput;
 
         //adding force in the direction the user is looking in
         if(grounded)
