@@ -30,4 +30,5 @@ public class StartPuzzle2 : MonoBehaviour
             playerCam.SetActive(false);
         }
     }
+    //this game is inspired by video https://www.youtube.com/watch?v=gkBntY22Oco
 }

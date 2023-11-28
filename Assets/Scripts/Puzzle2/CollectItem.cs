@@ -19,7 +19,9 @@ public class CollectItem : MonoBehaviour
     public GameObject spawner;
     //camera of this puzzle mini game
     public GameObject puzzleCam;
+    //part of the environment
     public GameObject platform;
+    //player of this game
     public GameObject ball;
     
 
