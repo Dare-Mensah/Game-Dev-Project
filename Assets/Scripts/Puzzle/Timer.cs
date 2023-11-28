@@ -6,33 +6,43 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-
+    //displays the current time.
     [SerializeField] TextMeshProUGUI timerText;
+    //tracking the ongoing time.
     public float currentTime;
-
+    // setting the initial time value
     public float startingTime;
-
+    //text shows you winning or not
     public GameObject WinText;
 
-
+    //player and its related camera
     public GameObject player;
-    public GameObject playerCam;
-    public GameObject puzzleCam;
-    public GameObject TimesUp;
-    public GameObject CharacterTrigger;
 
+    public GameObject playerCam;
+
+    public GameObject puzzleCam;
+    //shows when time runs out
+    public GameObject TimesUp;
+    // trigger character interactions or events
+    public GameObject CharacterTrigger;
+    //object represent start of a puzzle
     public GameObject puzzleStart;
+    //game environment
     public GameObject platform;
+
     //public GameObject ball;
 
+    //different NPCs in the game
     public GameObject currNPC;
+
     public GameObject nextNPC;
+
     public GameObject altNPC;
 
    
-
+    //to check if it is running.
     public bool notRunning;
-
+    //a position in the Unity game space
     Vector3 originalPos;
 
     // Start is called before the first frame update
@@ -97,8 +107,9 @@ public class Timer : MonoBehaviour
 
     IEnumerator WaitBeforeChange()
     {
+        //wait for 3 seconds
         yield return new WaitForSeconds(3);
-
+        //close camera
         puzzleCam.SetActive(false);
     }
 
