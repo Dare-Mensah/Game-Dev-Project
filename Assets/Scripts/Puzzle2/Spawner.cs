@@ -5,8 +5,11 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     // Start is called before the first frame update
+    //time gap in seconds for how often a cube is spawned
     public float _delay = 0.9f;
+    //represents the cube to be spawned
     public GameObject _cube;
+    //present message if you are winning
     public GameObject WinText;
 
     public GameObject timeUp;
