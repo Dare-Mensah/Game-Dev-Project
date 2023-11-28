@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 public class CollectItem : MonoBehaviour
 {
-
+    //track player score
     public int score;
     public int target;
 
