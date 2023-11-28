@@ -7,9 +7,11 @@ public class CollectItem : MonoBehaviour
 {
     //track player score
     public int score;
+    //value that player acheived
     public int target;
-
+    //display the score to GUI
     [SerializeField] TextMeshProUGUI _score;
+    //present target value on UI
     [SerializeField] TextMeshProUGUI _target;
 
     public GameObject WinText;
