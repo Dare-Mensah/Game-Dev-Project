@@ -13,9 +13,11 @@ public class CollectItem : MonoBehaviour
     [SerializeField] TextMeshProUGUI _score;
     //present target value on UI
     [SerializeField] TextMeshProUGUI _target;
-
+    //message to output if player is winning or not
     public GameObject WinText;
+    //responsible for spawning cubes
     public GameObject spawner;
+    //camera of this puzzle mini game
     public GameObject puzzleCam;
     public GameObject platform;
     public GameObject ball;
