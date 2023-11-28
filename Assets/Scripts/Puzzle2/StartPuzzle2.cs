@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class StartPuzzle2 : MonoBehaviour
 {
-
+    //the camera inside the puzzle
     public GameObject puzzleCam;
+    //primary camera attached to the player
     public GameObject playerCam;
+    //player who is moving
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -22,9 +24,10 @@ public class StartPuzzle2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //check E bottom is pressed
         if(Input.GetKeyDown(KeyCode.E))
         {
-
+            //make puzzle camera,and player in minigame on, rest turns off, to prevent player in big map is affect by control.
             puzzleCam.SetActive(true);
             player.SetActive(false);
             playerCam.SetActive(false);
