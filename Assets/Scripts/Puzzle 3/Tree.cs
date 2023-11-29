@@ -10,7 +10,7 @@ public class Tree : MonoBehaviour
     public GameObject player;   // Reference to the player object.
     private Vector3 originalSpawnPoint; // Store the original spawn point.
 
-    void Start()
+    void Start() //method intialisation
     {
         // Initialize the original spawn point.
         originalSpawnPoint = player.transform.position;
