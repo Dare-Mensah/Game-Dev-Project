@@ -6,11 +6,12 @@ public class Coin : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.tag == "Player") //checks if the player has interacted with the coin
+        if (collision.gameObject.tag == "Player")
         {
-            Destroy(gameObject); //destroys game object
+            Destroy(gameObject); //DESTROYS THE CUBE IF IT COLLDIES WITH THE BALL
+
         }
     }
 }
