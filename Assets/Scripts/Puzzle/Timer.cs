@@ -22,13 +22,17 @@ public class Timer : MonoBehaviour
 
     public GameObject puzzleCam;
     //shows when time runs out
+
+
     public GameObject TimesUp;
     // trigger character interactions or events
     public GameObject CharacterTrigger;
     //object represent start of a puzzle
     public GameObject puzzleStart;
     //game environment
-    public GameObject platform;
+    public GameObject nextPlatform;
+
+    public GameObject altPlatform;
 
     //public GameObject ball;
 
@@ -79,7 +83,7 @@ public class Timer : MonoBehaviour
             TimesUp.SetActive(false);
             StartCoroutine(WaitBeforeChange());
             CharacterTrigger.SetActive(false);
-            platform.SetActive(true);
+            nextPlatform.SetActive(true);
             puzzleStart.SetActive(false);
             currNPC.SetActive(false);
             nextNPC.SetActive(true);
@@ -95,7 +99,7 @@ public class Timer : MonoBehaviour
             altNPC.SetActive(true);
             currNPC.SetActive(false);
             puzzleStart.SetActive(false);
-            platform.SetActive(true);
+            altPlatform.SetActive(true);
 
 
         }
@@ -112,5 +116,6 @@ public class Timer : MonoBehaviour
         //close camera
         puzzleCam.SetActive(false);
     }
+
 
 }
