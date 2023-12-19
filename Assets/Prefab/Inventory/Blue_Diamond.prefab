@@ -133,3 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e9e9cac881a6a40837de317592dea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: Diamondo5side
+  itemPrefab: {fileID: 3780625295982959754, guid: fafb711a15bd53140b552503741a9db0, type: 3}

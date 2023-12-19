@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.5, y: -28.6}
+  m_AnchoredPosition: {x: -26.3, y: -35.7}
   m_SizeDelta: {x: 31.5825, y: 44.2737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4610159968569688251
@@ -254,7 +254,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3177268776597380428}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7400422384001308199}
+        m_TargetAssemblyTypeName: Slots, Assembly-CSharp
+        m_MethodName: DropItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6275062409147108112
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +412,7 @@ GameObject:
   - component: {fileID: 5157789105406287222}
   - component: {fileID: 8028348037982691165}
   - component: {fileID: 5761772331534368077}
+  - component: {fileID: 7400422384001308199}
   m_Layer: 5
   m_Name: Slot (1)
   m_TagString: Untagged
@@ -466,3 +479,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7400422384001308199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7978094193083661274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1339c189064f046ac23d70fa1b5a5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 0
+  amountText: {fileID: 3340536681429529827}
+  amount: 0
