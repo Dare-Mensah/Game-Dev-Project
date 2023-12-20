@@ -18,16 +18,16 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape)) // if the user presses the escape key
         {
 
-            if (isPaused)
+            if (isPaused) //checks if paused
             {
-                ResumeGame();
+                ResumeGame(); //resumes the game
             }
             else
             {
-                PauseGame();
+                PauseGame(); //pauses the game
             }
         }
     }
@@ -36,16 +36,16 @@ public class PauseMenu : MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0f; //stops time
         isPaused = true;
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        Cursor.visible = true; //shows the cursor and unlocks it
     }
 
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 1f; //starts time again
         isPaused = false;
 
         //Cursor.lockState = CursorLockMode.Locked;
@@ -60,6 +60,6 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        Application.Quit();// quits the game
     }
 }
