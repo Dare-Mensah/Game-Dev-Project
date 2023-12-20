@@ -13,6 +13,8 @@ public class Slots : MonoBehaviour
 
     public int amount;
 
+    public TextMeshProUGUI ItemName;
+
     // Start is called before the first frame update
     void Start()
     {

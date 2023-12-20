@@ -11,7 +11,7 @@ public class PuzzleComplete : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player") //CHECKS IF BALL ENTERS TRIGGER
+        if(other.gameObject.tag == "Ball") //CHECKS IF BALL ENTERS TRIGGER
         {
             WinText.SetActive(true); //SETS THE WIN TEXT TO TRUE
             Win = true;

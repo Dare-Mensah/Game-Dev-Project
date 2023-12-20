@@ -135,3 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: CubieBeveled
   itemPrefab: {fileID: 3055018388596269384, guid: ef0e1cfe1c6b1484898ca229c02b92f0, type: 3}
+  itemPrice: 3

@@ -44,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
         rB.freezeRotation = true;
 
         resetJump();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     private void FixedUpdate()

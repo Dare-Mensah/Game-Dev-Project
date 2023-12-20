@@ -21,7 +21,7 @@ public class Destroy : MonoBehaviour
         }
     }
     private void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Ball")
         {
             Destroy(gameObject); //DESTROYS THE CUBE IF IT COLLDIES WITH THE BALL
            

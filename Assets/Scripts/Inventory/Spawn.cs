@@ -7,6 +7,7 @@ public class Spawn : MonoBehaviour
     public string itemName;
     public GameObject itemPrefab;
     private Transform player;
+    public int itemPrice;
     // Start is called before the first frame update
     void Start()
     {
