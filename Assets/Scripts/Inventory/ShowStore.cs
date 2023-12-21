@@ -17,4 +17,12 @@ public class ShowStore : MonoBehaviour
             npcDialogue.SetActive(false);
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            StoreUI.SetActive(false);
+        }
+    }
 }

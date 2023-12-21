@@ -135,3 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Diamondo5side
   itemPrefab: {fileID: 3780625295982959754, guid: fafb711a15bd53140b552503741a9db0, type: 3}
+  itemPrice: 8

@@ -33,6 +33,7 @@ public class NPCSlot : MonoBehaviour
         itemAmount.text = "Amount: " + _itemAmount.ToString(); //showing the amoutn for the item
     }
 
+
     public void Buy()
     {
         for (int i = 0; i < inventory.slots.Length; i++) 
@@ -59,7 +60,29 @@ public class NPCSlot : MonoBehaviour
                 break;
             }
         }
+
+
+        if (itemToBuy.CompareTag("Platform"))
+        {
+            BuyPlatform(itemToBuy);
+        }
     }
+
+
+    public void BuyPlatform(GameObject platform)
+    {
+        if (player.Gold >= platform.GetComponentInChildren<Spawn>().itemPrice && _itemAmount > 0)
+        {
+            _itemAmount -= 1;
+            player.Gold -= platform.GetComponentInChildren<Spawn>().itemPrice;
+
+            // Set the platform to active
+            platform.SetActive(true);
+        }
+    }
+
+
+
 
     public void Sell()
     {
