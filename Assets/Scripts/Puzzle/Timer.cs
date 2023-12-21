@@ -43,6 +43,9 @@ public class Timer : MonoBehaviour
 
     public GameObject altNPC;
 
+    //UI 
+    public GameObject BuySlot;
+
    
     //to check if it is running.
     public bool notRunning;
@@ -100,6 +103,8 @@ public class Timer : MonoBehaviour
             currNPC.SetActive(false);
             puzzleStart.SetActive(false);
             altPlatform.SetActive(true);
+            BuySlot.SetActive(true);
+
 
 
         }
