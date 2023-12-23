@@ -46,6 +46,8 @@ public class Timer : MonoBehaviour
     //UI 
     public GameObject BuySlot;
 
+    public GameObject Ball;
+
    
     //to check if it is running.
     public bool notRunning;
@@ -65,6 +67,7 @@ public class Timer : MonoBehaviour
         if(currentTime >1 && puzzleCam.activeInHierarchy == true && !notRunning)
         {
             currentTime -= 1 * Time.deltaTime;
+            //Ball.SetActive(true);
         }
         //currentTime -= 1 * Time.deltaTime;
         //int minutes = Mathf.FloorToInt(currentTime / 60);
@@ -78,6 +81,12 @@ public class Timer : MonoBehaviour
             //puzzleCam.SetActive(false);
             //player.SetActive(true);
 
+        //}
+
+
+        //if(puzzleCam.activeInHierarchy == true)
+        //{
+            //Ball.SetActive(true);
         //}
 
         if(currentTime > 1 && WinText.activeInHierarchy == true) // if the player wins
