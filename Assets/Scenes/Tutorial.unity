@@ -4865,6 +4865,24 @@ Transform:
   - {fileID: 479140525}
   m_Father: {fileID: 1623268537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &100309355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1136261614858316081, guid: ac12cb48a46e80b4c8edd7b0788b738a, type: 3}
+  m_PrefabInstance: {fileID: 389077551156943071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &100309360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100309355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51036ad44db40474d86e6d63b5e20467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: LoseScreen
 --- !u!1 &101213780
 GameObject:
   m_ObjectHideFlags: 0
@@ -7728,7 +7746,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168222482}
   m_LocalRotation: {x: 0.018412171, y: -0, z: -0, w: 0.99983054}
-  m_LocalPosition: {x: 0, y: 0, z: -17.006166}
+  m_LocalPosition: {x: 0, y: 0, z: -6.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7736,7 +7754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.11, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.99991, y: -1260.7439}
+  m_AnchoredPosition: {x: -1244.0004, y: -202}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168222484
@@ -14044,8 +14062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
+  m_BindingMode: 5
+  m_FollowOffset: {x: 0, y: 2.5, z: -3}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -16484,6 +16502,7 @@ GameObject:
   - component: {fileID: 355486282}
   - component: {fileID: 355486281}
   - component: {fileID: 355486280}
+  - component: {fileID: 355486283}
   m_Layer: 0
   m_Name: End Trigger
   m_TagString: Untagged
@@ -16521,7 +16540,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16577,6 +16596,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355486278}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &355486283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355486278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51036ad44db40474d86e6d63b5e20467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: LoseScreen
 --- !u!1 &360834534
 GameObject:
   m_ObjectHideFlags: 0
@@ -22688,8 +22720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
+  m_BindingMode: 5
+  m_FollowOffset: {x: 0, y: 2.5, z: -3}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -39375,7 +39407,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991562152}
   m_LocalRotation: {x: 0.018412171, y: -0, z: -0, w: 0.99983054}
-  m_LocalPosition: {x: 0, y: 0, z: -17.006166}
+  m_LocalPosition: {x: 0, y: 0, z: -6.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39383,7 +39415,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.11, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.99991, y: -1260.7439}
+  m_AnchoredPosition: {x: -1244, y: -202}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991562154
@@ -67869,8 +67901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
+  m_BindingMode: 5
+  m_FollowOffset: {x: 0, y: 2.5, z: -3}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -70941,7 +70973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1724400184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -90544,6 +90576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3429419748449817506, guid: ac12cb48a46e80b4c8edd7b0788b738a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975203250868307328, guid: ac12cb48a46e80b4c8edd7b0788b738a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 916.4
@@ -90587,7 +90623,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1136261614858316081, guid: ac12cb48a46e80b4c8edd7b0788b738a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 100309360}
   m_SourcePrefab: {fileID: 100100000, guid: ac12cb48a46e80b4c8edd7b0788b738a, type: 3}
 --- !u!1 &424730071120321094
 GameObject:
@@ -91761,15 +91800,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.055985216
+      value: 0.055985224
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000045974895
+      value: -2.1144896e-23
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.5779576e-10
+      value: 2.4731876e-24
       objectReference: {fileID: 0}
     - target: {fileID: 6826481650084533979, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_Name
