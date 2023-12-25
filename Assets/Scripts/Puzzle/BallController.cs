@@ -5,9 +5,9 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     public float Speed;
-
+    //move of Horizontal
     public float moveHorizontal;
-
+    //move of vertical
     public float moveVertical;
 
     Rigidbody rB;

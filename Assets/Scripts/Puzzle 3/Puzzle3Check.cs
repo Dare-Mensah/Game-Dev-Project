@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Puzzle3Check : MonoBehaviour
 {
-
+    //camera specific to a puzzle
     public GameObject puzzleCam;
-
+    // the player who is playing
     public GameObject playerPuzzle3;
 
     // Start is called before the first frame update
@@ -23,4 +23,5 @@ public class Puzzle3Check : MonoBehaviour
             playerPuzzle3.SetActive(true);
         }
     }
+    // this game is inspired by website https://gamedevacademy.org/unity-ski-mini-game-tutorial/
 }

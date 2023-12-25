@@ -1,7 +1,9 @@
+// Import necessary namespaces
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Define the DualHooks class, extending MonoBehaviour
 public class DualHooks : MonoBehaviour
 {
     [Header("References")]
@@ -52,11 +54,13 @@ public class DualHooks : MonoBehaviour
 
     private void Start()
     {
+        // Initialize lists and setup references
         ListSetup();
     }
 
     private void ListSetup()
     {
+        // Initialize lists and populate them with default values
         predictionHits = new List<RaycastHit>();
 
         swingPoints = new List<Vector3>();
@@ -80,6 +84,7 @@ public class DualHooks : MonoBehaviour
 
     private void Update()
     {
+        // Handle user input and check for swing points
         MyInput();
         CheckForSwingPoints();
 
@@ -91,11 +96,13 @@ public class DualHooks : MonoBehaviour
 
     private void LateUpdate()
     {
+        // Draw ropes
         DrawRope();
     }
 
     private void MyInput()
     {
+        // Handle input for starting swings or grapples
         // starting swings or grapples depends on whether or not shift is pressed
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -117,6 +124,7 @@ public class DualHooks : MonoBehaviour
 
     private void CheckForSwingPoints()
     {
+        // Check for swing points and update prediction visualization
         for (int i = 0; i < amountOfSwingPoints; i++)
         {
             if (swingsActive[i]) { /* Do Nothing */ }
