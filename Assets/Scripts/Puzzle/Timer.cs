@@ -22,13 +22,17 @@ public class Timer : MonoBehaviour
 
     public GameObject puzzleCam;
     //shows when time runs out
+
+
     public GameObject TimesUp;
     // trigger character interactions or events
     public GameObject CharacterTrigger;
     //object represent start of a puzzle
     public GameObject puzzleStart;
     //game environment
-    public GameObject platform;
+    public GameObject nextPlatform;
+
+    public GameObject altPlatform;
 
     //public GameObject ball;
 
@@ -38,6 +42,11 @@ public class Timer : MonoBehaviour
     public GameObject nextNPC;
 
     public GameObject altNPC;
+
+    //UI 
+    public GameObject BuySlot;
+
+    public GameObject Ball;
 
    
     //to check if it is running.
@@ -58,6 +67,7 @@ public class Timer : MonoBehaviour
         if(currentTime >1 && puzzleCam.activeInHierarchy == true && !notRunning)
         {
             currentTime -= 1 * Time.deltaTime;
+            //Ball.SetActive(true);
         }
         //currentTime -= 1 * Time.deltaTime;
         //int minutes = Mathf.FloorToInt(currentTime / 60);
@@ -73,13 +83,19 @@ public class Timer : MonoBehaviour
 
         //}
 
+
+        //if(puzzleCam.activeInHierarchy == true)
+        //{
+            //Ball.SetActive(true);
+        //}
+
         if(currentTime > 1 && WinText.activeInHierarchy == true) // if the player wins
         { //SETS THE PLAYER TO TRUE SETS THE NEXT PLATOFRM TO ACTIVE AND SETS THE (WIN) NPC  TO TRUE
             player.SetActive(true);
             TimesUp.SetActive(false);
             StartCoroutine(WaitBeforeChange());
             CharacterTrigger.SetActive(false);
-            platform.SetActive(true);
+            nextPlatform.SetActive(true);
             puzzleStart.SetActive(false);
             currNPC.SetActive(false);
             nextNPC.SetActive(true);
@@ -95,7 +111,9 @@ public class Timer : MonoBehaviour
             altNPC.SetActive(true);
             currNPC.SetActive(false);
             puzzleStart.SetActive(false);
-            platform.SetActive(true);
+            altPlatform.SetActive(true);
+            BuySlot.SetActive(true);
+
 
 
         }
@@ -112,5 +130,6 @@ public class Timer : MonoBehaviour
         //close camera
         puzzleCam.SetActive(false);
     }
+
 
 }

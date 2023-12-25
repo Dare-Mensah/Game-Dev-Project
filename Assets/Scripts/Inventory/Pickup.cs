@@ -4,14 +4,41 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public Item item = new Item("Item Name", 1);
 
-    void OnTriggerEnter(Collider other)
+    private InventoryController inventory;
+    public GameObject itemButton;
+    public string itemName;
+    // Start is called before the first frame update
+    void Start()
     {
-        if(other.CompareTag("Player")) // IF THE PLAYER PICKS UP AND OBJECT
+        inventory = FindObjectOfType<InventoryController>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
         {
-            Inventory.instance.AddItem(item); //WE ADD ITEM 
-            Destroy(gameObject); //DESTROY THE OBJECT
+            for(int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.isFull[i] == true && inventory.slots[i].transform.GetComponent<Slots>().amount < 2) //stack amount
+                {
+                    if (itemName == inventory.slots[i].transform.GetComponentInChildren<Spawn>().itemName) //chejkcing if the item we want to pick up is the same then stack
+                    {
+                        Destroy(gameObject);
+                        inventory.slots[i].GetComponent<Slots>().amount += 1;
+                        break;
+
+                    }
+                }
+                else if(inventory.isFull[i] == false)
+                {
+                    inventory.isFull[i] = true;
+                    Instantiate(itemButton, inventory.slots[i].transform.transform, false);
+                    inventory.slots[i].GetComponent<Slots>().amount += 1;
+                    Destroy(gameObject);
+                    break;
+                }
+            }
         }
     }
 }
