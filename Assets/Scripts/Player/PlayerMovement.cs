@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    private Animator animator;
+
     [Header("Movement Refernces")]
     public float movespeed;
 
@@ -36,10 +38,13 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rB;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         rB = GetComponent<Rigidbody>();
         rB.freezeRotation = true;
 
@@ -68,6 +73,21 @@ public class PlayerMovement : MonoBehaviour
         else
             rB.drag = 0;
 
+        // Set the "isMoving" parameter in the animator based on player's movement
+
+
+        if (horizontalInput != 0f || verticalInput != 0f)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
+
+
+
+
 
         if (!sR.flipX && horizontalInput < 0) //flips the sprite depening on where the player is facing
         {
@@ -78,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
         {
             sR.flipX = false;
         }
+
+
     }
 
     public void MyInput()
