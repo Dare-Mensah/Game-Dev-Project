@@ -15,6 +15,7 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
     public GameObject npcCam;
     public GameObject dialogueBox;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,14 +50,15 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
 
     void StartDialogue()
     {
-        index = 0;// SATRTS AT FIRST LINE OF DIALOGUE
+        index = 0;
+        textComponent.text = string.Empty; // Clear text before starting a new dialogue
         StartCoroutine(TypeLine());
     }
 
-
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray()) //ITERATES THROUGH EACH CHARACTER IN OF THE WORD IN THE INDEX
+        textComponent.text = string.Empty; // Clear text before typing a new line
+        foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -73,13 +75,13 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
 
 
     void NextLine()
-    { //MOVES TO THE NEXT LINE OF DIALOGUE
-        if(index < lines.Length - 1)
+    {
+        if (index < lines.Length - 1)
         {
             index++;
-            textComponent.text = string.Empty; // REMOVES THE PREVIOUS LINE OF TEXT
+            StopCoroutine("TypeLine"); // Stop the previous coroutine
+            textComponent.text = string.Empty; // Clear the text before starting a new line
             StartCoroutine(TypeLine());
-
         }
         else
         {
@@ -93,9 +95,9 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
         { //Check if the user enters the trigger then start dialogue
             //npcCam.SetActive(true);
             dialogueBox.SetActive(true);
-            textComponent.text = string.Empty;
+            textComponent.text = string.Empty; 
             StartDialogue();
-            StartCoroutine(WaitForChange());
+            StartCoroutine(WaitForChange());        
         }
     }
 
@@ -107,6 +109,7 @@ public class TutorialPrompts : MonoBehaviour //SCRIPT USED TO BE USED FOR ONLY T
             dialogueBox.SetActive(false);
             textComponent.text = string.Empty;
             StopAllCoroutines();
+
         }
     }
 

@@ -1932,7 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -1940,10 +1940,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &39561014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4631,7 +4631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 3098410885156728073}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 6: Great work player you have collected all the hidden coins!'
   - 'You: :D'
@@ -4640,10 +4640,10 @@ MonoBehaviour:
   - 'NPC 6: To complete the tutorial approach the last character.'
   - 'You: Great.'
   textSpeed: 0.1
-  next: {fileID: 2966033001996910438}
-  escape: {fileID: 2785897825319536988}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 5349397417289313313}
+  dialogueBox: {fileID: 0}
 --- !u!65 &89816290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10031,17 +10031,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 8986200750010926630}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC: Unfortuntely you were not able to complete this puzzle.'
   - 'You: :('
   - 'NPC 4: I am still able to open the path but remember failure to complete puzzles
     will result in a negative impact in your journey.'
   textSpeed: 0.1
-  next: {fileID: 2300230539048252971}
-  escape: {fileID: 1841673065555419529}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 8898694864667433648}
+  dialogueBox: {fileID: 0}
 --- !u!65 &230024468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15838,7 +15838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -15846,10 +15846,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &332390315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26913,15 +26913,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 4921464776944439585}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC: Nice Work Travellor you can now progress further in the tutorial'
   - 'You: Great thanks'
   textSpeed: 0.1
-  next: {fileID: 6112233547357885581}
-  escape: {fileID: 4719724264508243063}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 3309116765690425859}
+  dialogueBox: {fileID: 0}
 --- !u!65 &591978257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29364,7 +29364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 3098410885156728073}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 6: Great work player you have collected all the hidden coins!'
   - 'You: :D'
@@ -29373,10 +29373,10 @@ MonoBehaviour:
   - 'NPC 6: To complete the tutorial approach the last character.'
   - 'You: Great.'
   textSpeed: 0.1
-  next: {fileID: 2966033001996910438}
-  escape: {fileID: 2785897825319536988}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 5349397417289313313}
+  dialogueBox: {fileID: 0}
 --- !u!65 &653819817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31732,7 +31732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -31740,10 +31740,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &716356924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39983,7 +39983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -39991,10 +39991,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &931126716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41206,17 +41206,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 8986200750010926630}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC: Unfortuntely you were not able to complete this puzzle.'
   - 'You: :('
   - 'NPC 4: I am still able to open the path but remember failure to complete puzzles
     will result in a negative impact in your journey.'
   textSpeed: 0.1
-  next: {fileID: 2300230539048252971}
-  escape: {fileID: 1841673065555419529}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 8898694864667433648}
+  dialogueBox: {fileID: 0}
 --- !u!65 &947914594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41456,7 +41456,9 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
-  m_Layer: 0
+  - component: {fileID: 963194232}
+  - component: {fileID: 963194231}
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -41591,6 +41593,83 @@ MonoBehaviour:
   focusLookAt: {fileID: 0}
   BasicCam: {fileID: 1155712440}
   currentstyle: 0
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 7efbaf160b636c849b84ee4e282f6925, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 963194228}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &963423606
 GameObject:
   m_ObjectHideFlags: 0
@@ -41929,7 +42008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -41937,10 +42016,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &969650572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43022,16 +43101,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 7199072022692616437}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 5: In order to finish the tutorial you must complete my last mini game.'
   - 'You: Alright.'
   - 'NPC 5: Step on the green pad when you are ready.'
   textSpeed: 0.1
-  next: {fileID: 2897162647524930887}
-  escape: {fileID: 8138698538998063550}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 6688465065468887012}
+  dialogueBox: {fileID: 0}
 --- !u!1 &995197621
 GameObject:
   m_ObjectHideFlags: 0
@@ -44286,7 +44365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -44294,10 +44373,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1024003941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45061,7 +45140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -45069,10 +45148,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1038672735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45223,6 +45302,55 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 253130524}
+--- !u!1 &1039363131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039363133}
+  - component: {fileID: 1039363132}
+  m_Layer: 8
+  m_Name: PostProcessing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1039363132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039363131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 5fad944e4e85d354c88da0cebf9e3063, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1039363133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039363131}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 444.9739, y: 3.053873, z: 203.59033}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1039841735
 GameObject:
   m_ObjectHideFlags: 0
@@ -51193,7 +51321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 1184683163983680316}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 2: Great, now that we have movement down we can move on to jumping.'
   - 'You: Cool'
@@ -51203,10 +51331,10 @@ MonoBehaviour:
   - 'NPC 2: Also before I forget the white plates spread out across the map are checkpoints.'
   - 'You: Ahhhh, was wondering what they were.'
   textSpeed: 0.1
-  next: {fileID: 2131764770862618938}
-  escape: {fileID: 4176387539686400151}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 8406898247940917801}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1155044836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55613,17 +55741,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 5524900178704451579}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 3: Hello Travellor In order to unlock the next path you must Complete my
     mini game.'
   - 'You: Okay.'
   - 'NPC 3: Good luck travellor.'
   textSpeed: 0.1
-  next: {fileID: 1062802380889494464}
-  escape: {fileID: 2061816604761057174}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 5787242630221516146}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1260901018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62637,17 +62765,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 5524900178704451579}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 3: Hello Travellor In order to unlock the next path you must Complete my
     mini game.'
   - 'You: Okay.'
   - 'NPC 3: Good luck travellor.'
   textSpeed: 0.1
-  next: {fileID: 1062802380889494464}
-  escape: {fileID: 2061816604761057174}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 5787242630221516146}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1406545648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65279,7 +65407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -65287,10 +65415,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1469521363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66726,7 +66854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 3098410885156728073}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 6: Great work player you have collected all the hidden coins!'
   - 'You: :D'
@@ -66735,10 +66863,10 @@ MonoBehaviour:
   - 'NPC 6: To complete the tutorial approach the last character.'
   - 'You: Great.'
   textSpeed: 0.1
-  next: {fileID: 2966033001996910438}
-  escape: {fileID: 2785897825319536988}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 5349397417289313313}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1506073497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83415,7 +83543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 3098410885156728073}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 6: Great work player you have collected all the hidden coins!'
   - 'You: :D'
@@ -83424,10 +83552,10 @@ MonoBehaviour:
   - 'NPC 6: To complete the tutorial approach the last character.'
   - 'You: Great.'
   textSpeed: 0.1
-  next: {fileID: 2966033001996910438}
-  escape: {fileID: 2785897825319536988}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 5349397417289313313}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1876361724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86697,17 +86825,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 5524900178704451579}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 3: Hello Travellor In order to unlock the next path you must Complete my
     mini game.'
   - 'You: Okay.'
   - 'NPC 3: Good luck travellor.'
   textSpeed: 0.1
-  next: {fileID: 1062802380889494464}
-  escape: {fileID: 2061816604761057174}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 5787242630221516146}
+  dialogueBox: {fileID: 0}
 --- !u!65 &1954727199
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -92791,7 +92919,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh324026
+  m_Name: pb_Mesh40818
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -92956,7 +93084,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh324790
+  m_Name: pb_Mesh41602
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -95323,7 +95451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb8c6678881b80448678d05ce7fff57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 6465327858954777098}
+  textComponent: {fileID: 0}
   lines:
   - 'NPC 4: Great work Travellor.'
   - 'You: Thank You.'
@@ -95331,10 +95459,10 @@ MonoBehaviour:
   - 'You: Great.'
   - 'NPC 4: Good luck with your next puzzle.'
   textSpeed: 0.08
-  next: {fileID: 3625835230207530981}
-  escape: {fileID: 2743818854329715002}
+  next: {fileID: 0}
+  escape: {fileID: 0}
   npcCam: {fileID: 0}
-  dialogueBox: {fileID: 209845971335987385}
+  dialogueBox: {fileID: 0}
 --- !u!65 &2102127255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -98061,15 +98189,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.055985216
+      value: 0.055985224
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000045974895
+      value: 2.1144896e-23
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.5779576e-10
+      value: -2.4731876e-24
       objectReference: {fileID: 0}
     - target: {fileID: 6826481650084533979, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_Name
@@ -104733,3 +104861,4 @@ SceneRoots:
   - {fileID: 39830517}
   - {fileID: 194922079}
   - {fileID: 1254590712}
+  - {fileID: 1039363133}
