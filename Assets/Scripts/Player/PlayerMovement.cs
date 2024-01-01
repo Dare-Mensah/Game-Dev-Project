@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private Animator animator;
+    private Animator animator; //player animation
+
+    public AudioSource jumpSound;
+    public AudioSource moveSound;
 
     [Header("Movement Refernces")]
     public float movespeed;
@@ -79,14 +82,12 @@ public class PlayerMovement : MonoBehaviour
         if (horizontalInput != 0f || verticalInput != 0f)
         {
             animator.SetBool("isMoving", true);
+            
         }
         else
         {
             animator.SetBool("isMoving", false);
         }
-
-
-
 
 
         if (!sR.flipX && horizontalInput < 0) //flips the sprite depening on where the player is facing
@@ -106,12 +107,15 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal"); //W and S
         verticalInput = Input.GetAxisRaw("Vertical"); // A and D
+        
 
-        if(Input.GetKey(jumpKey) && readyToJump && grounded) // if ready to jump is true and the player is grounded
+        if (Input.GetKey(jumpKey) && readyToJump && grounded) // if ready to jump is true and the player is grounded
         {
             readyToJump = false;
 
             Jump();
+
+            jumpSound.Play();
 
             Invoke(nameof(resetJump), jumpCooldown);
 
@@ -120,16 +124,32 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        //move Direction
+        // move Direction
         moveDir = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        //adding force in the direction the user is looking in
-        if(grounded)
+        // adding force in the direction the user is looking in
+        if (grounded)
+        {
             rB.AddForce(moveDir.normalized * movespeed * 10f, ForceMode.Force);
-        
-        else if(!grounded)
+
+            // Check if the player is moving and play the moveSound
+            if ((horizontalInput != 0f || verticalInput != 0f) && !moveSound.isPlaying)
+            {
+                moveSound.Play();
+            }
+            else if (horizontalInput == 0f && verticalInput == 0f)
+            {
+                // Stop the moveSound when the player is not moving
+                moveSound.Stop();
+            }
+        }
+        else if (!grounded)
+        {
             rB.AddForce(moveDir.normalized * movespeed * 10f * airMultiplier, ForceMode.Force);
-        
+
+            // Stop the moveSound when the player is not grounded
+            moveSound.Stop();
+        }
     }
 
     private void SpeedControl()

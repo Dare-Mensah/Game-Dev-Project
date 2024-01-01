@@ -5,9 +5,9 @@ using UnityEngine;
 public class NPCTrigger : MonoBehaviour
 {
     public GameObject dialogueBox; //dialoguebox
-    public Animator animator;
-    public Animator npcAnimator;
 
+    public Animator animator; //animations
+    public Animator npcAnimator; //animations
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")

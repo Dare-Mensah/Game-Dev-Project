@@ -9,6 +9,8 @@ public class NPCdialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
+    public AudioSource dialogueSound;
+
     private int index;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,7 @@ public class NPCdialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E)) //the user presses E to go to the next line
         {
             if(textComponent.text == lines[index])
             {
@@ -46,10 +48,11 @@ public class NPCdialogue : MonoBehaviour
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
+            dialogueSound.Play();
         }
     }
 
-    void NextLine()
+    void NextLine() //going to the next line of text
     {
         if(index < lines.Length - 1)
         {
@@ -59,7 +62,7 @@ public class NPCdialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false); //ones the dialogue is finished it cloeses the dialogue box
         }
     }
 }
