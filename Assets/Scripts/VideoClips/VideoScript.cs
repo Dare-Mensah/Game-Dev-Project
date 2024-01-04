@@ -19,6 +19,6 @@ public class VideoScript : MonoBehaviour
 
     void VideoFinish (VideoPlayer vp)
     { //method videofinish is defined and called upon
-        SceneManager.LoadScene(sceneName); //the scene is loaded via the LoadScene () method that loads scene as per name of scene
+        Initiate.Fade(sceneName, Color.black, 1); //loads the scene according to the level name string
     }
 }

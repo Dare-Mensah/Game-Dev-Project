@@ -26,5 +26,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 5e37a871cab1700418c3a616dc3ccb5e
+  - enabled: 1
+    path: Assets/Scenes/LoseClip.unity
+    guid: c40359c27b38a8d49ac171323a83b3ec
+  - enabled: 1
+    path: Assets/Scenes/WinClip.unity
+    guid: 0c8bcc21354c225458e1499aca266d07
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

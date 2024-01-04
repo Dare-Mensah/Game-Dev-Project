@@ -55,14 +55,9 @@ public class Timer : MonoBehaviour
     //a position in the Unity game space
     Vector3 originalPos;
 
-    //win sound
-    public AudioSource winSound;
+    public GameObject WinLight;
 
-    //lose sound
-    public AudioSource loseSound;
-
-    private bool hasWon = false;
-    private bool hasLost = false;
+    public GameObject LoseLight;
 
 
     // Start is called before the first frame update
@@ -83,22 +78,8 @@ public class Timer : MonoBehaviour
         //currentTime -= 1 * Time.deltaTime;
         //int minutes = Mathf.FloorToInt(currentTime / 60);
         //int seconds = Mathf.FloorToInt(currentTime % 60);
-        timerText.text = currentTime.ToString("00:00");
+        timerText.text = currentTime.ToString("00");
 
-        //if (Input.GetKey(KeyCode.Escape)) //leave before time runs out or before the player wins
-        //{
-            //currentTime = startingTime;
-            //playerCam.SetActive(true);
-            //puzzleCam.SetActive(false);
-            //player.SetActive(true);
-
-        //}
-
-
-        //if(puzzleCam.activeInHierarchy == true)
-        //{
-            //Ball.SetActive(true);
-        //}
 
         if(currentTime > 1 && WinText.activeInHierarchy == true) // if the player wins
         { //SETS THE PLAYER TO TRUE SETS THE NEXT PLATOFRM TO ACTIVE AND SETS THE (WIN) NPC  TO TRUE
@@ -111,8 +92,9 @@ public class Timer : MonoBehaviour
             puzzleStart.SetActive(false);
             currNPC.SetActive(false);
             nextNPC.SetActive(true);
+            WinLight.SetActive(true);
 
-            PlayWinSound();
+
 
         }
 
@@ -128,8 +110,8 @@ public class Timer : MonoBehaviour
             puzzleStart.SetActive(false);
             altPlatform.SetActive(true);
             BuySlot.SetActive(true);
+            LoseLight.SetActive(true);
 
-            PlayLoseSound();
         }
 
 
@@ -145,30 +127,6 @@ public class Timer : MonoBehaviour
         puzzleCam.SetActive(false);
     }
 
-
-    private void PlayWinSound()
-    {
-        // Play the win sound only if it hasn't been played yet
-        if (!hasWon)
-        {
-            winSound.Play();
-            hasWon = true;
-        }
-
-        // Optionally, add any additional logic or actions related to winning
-    }
-
-    private void PlayLoseSound()
-    {
-        // Play the lose sound only if it hasn't been played yet
-        if (!hasLost)
-        {
-            loseSound.Play();
-            hasLost = true;
-        }
-
-        // Optionally, add any additional logic or actions related to losing
-    }
 
 
 }

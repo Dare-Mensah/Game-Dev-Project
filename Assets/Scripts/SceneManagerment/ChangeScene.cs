@@ -8,20 +8,9 @@ public class ChangeScene : MonoBehaviour
 
     public string levelName; //public reference made to the level name which holds the name of levels
 
-    // Start is called before the first frame update and start method is defined below
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void ClickButton()
     { //public method is called to enable for correct action to be executed upon actioned clickbutton
-        SceneManager.LoadScene(levelName); //loads the scene according to the level name string
+        Initiate.Fade(levelName, Color.black, 1); //loads the scene according to the level name string
     }
 
     public void Quit()
@@ -33,7 +22,7 @@ public class ChangeScene : MonoBehaviour
     { //utilised for tutorial level....also is private method defined for when players enter the trigger collider
         if(other.gameObject.tag =="Player") 
         { //condition based if statement is a check to see if game object is tagged as "player"
-            SceneManager.LoadScene(levelName); //The use of LoadScene() also ensures for adequate scene loading as per the level name value
+            Initiate.Fade(levelName, Color.black, 1); //loads the scene according to the level name string
         }
     }
 }
