@@ -1,13 +1,14 @@
-using System.Collections;
+using System.Collections; // use of statement ensures the system.collection is imported to be used for collections like arrays
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; //importing unity engine that will allow for unity based functions and features to be deployed successfully
 using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
-{
-    public string levelName; //teaks level name in script
+{   // the changescene class that inherits from the monobehaviour class which thus enables for it to be assigned to the gameobjects and make use of unity features
 
-    // Start is called before the first frame update
+    public string levelName; //public reference made to the level name which holds the name of levels
+
+    // Start is called before the first frame update and start method is defined below
     void Start()
     {
         
@@ -19,20 +20,20 @@ public class ChangeScene : MonoBehaviour
     }
 
     public void ClickButton()
-    {
+    { //public method is called to enable for correct action to be executed upon actioned clickbutton
         SceneManager.LoadScene(levelName); //loads the scene according to the level name string
     }
 
     public void Quit()
     {
-        Application.Quit();
+        Application.Quit(); //use of .Quit() method ensures for effective process handling when the application is quit
     }
 
     private void OnTriggerEnter(Collider other)
-    { //for tutorial level
+    { //utilised for tutorial level....also is private method defined for when players enter the trigger collider
         if(other.gameObject.tag =="Player") 
-        {
-            SceneManager.LoadScene(levelName);
+        { //condition based if statement is a check to see if game object is tagged as "player"
+            SceneManager.LoadScene(levelName); //The use of LoadScene() also ensures for adequate scene loading as per the level name value
         }
     }
 }
