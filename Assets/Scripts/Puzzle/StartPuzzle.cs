@@ -29,7 +29,7 @@ public class StartPuzzle : MonoBehaviour
         {
             puzzleCam.SetActive(true); //SWITCH TO PUZZLE CAMERA
             StartCoroutine(WaitForPlayer()); //DELAYS THE TIME FOR THE CHARCTER TO DISSAPEAR
-            playerUI.SetActive(false);// disables the UI
+            playerUI.SetActive(false);// the use of setactive in this instance disables the player UI
             Ball.SetActive(true);
         }
 
