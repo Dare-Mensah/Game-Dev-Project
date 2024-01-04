@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
+using UnityEngine; //importing unityengine that enables for unity specific functions/features to be made use of
+using TMPro; //importing tmpro
+using UnityEngine.UI;//unity engine UI imported to allow for qualitative features to be deployed effectively
 
 public class Timer : MonoBehaviour
-{
+{ // timer class that inherits from the monobehaviour class which thus enables for it to be assigned to the gameobjects and make use of unity features
+
     //displays the current time.
     [SerializeField] TextMeshProUGUI timerText;
     //tracking the ongoing time.
