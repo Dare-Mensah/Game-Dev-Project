@@ -1,23 +1,24 @@
-using System.Collections;
+using System.Collections; // use of statement ensures the system.collection is imported to be used for collections like arrays
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; //importing unity engine that will allow for unity based functions and features to be deployed successfully
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
 public class VideoScript : MonoBehaviour
-{
+{   // the videoscript class that inherits from the monobehaviour class which thus enables for it to be assigned to the gameobjects and make use of unity features
+
     [SerializeField]
     VideoPlayer myVid;
 
-    public string sceneName;
+    public string sceneName;//public reference to the sceneName variable that defines the titled name of scenes
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() 
+    { //start method called and defined to allow for checks to run pertaining whether video has completed
         myVid.loopPointReached += VideoFinish; //checking if the video is finsined
     }
 
     void VideoFinish (VideoPlayer vp)
-    {
-        SceneManager.LoadScene(sceneName);
+    { //method videofinish is defined and called upon
+        SceneManager.LoadScene(sceneName); //the scene is loaded via the LoadScene () method that loads scene as per name of scene
     }
 }
