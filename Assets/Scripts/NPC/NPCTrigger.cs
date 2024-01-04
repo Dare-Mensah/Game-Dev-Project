@@ -1,7 +1,7 @@
 using System.Collections; // use of statement ensures the system.collection is imported to be used for collections like arrays
 using System.Collections.Generic;
 using UnityEngine; //importing unityengine to allow for unity based work to be conducted
-using TMPro; // Add this line
+using TMPro; // importing tmpro
 
 public class NPCTrigger : MonoBehaviour
 { // npctrigger class that inherits from the monobehaviour class which thus enables for it to be assigned to the gameobjects and make use of unity features
