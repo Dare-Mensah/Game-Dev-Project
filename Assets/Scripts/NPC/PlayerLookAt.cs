@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Add this line
+using TMPro; // importing tmpro
 
 public class PlayerLookAt : MonoBehaviour
 {
