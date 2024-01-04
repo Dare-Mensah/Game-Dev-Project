@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
-{   // the changescene class that inherits from the monobehaviour class which thus enables for it to be assigned to the gameobjects and make use of unity features
+{   // the settingsmenu class that inherits from the monobehaviour class which thus enables for it to be assigned to the gameobjects and make use of unity features
 
 
     public AudioMixer audioMixer; //public reference to the audio mixer variable
