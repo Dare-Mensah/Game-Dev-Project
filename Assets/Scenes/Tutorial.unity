@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.6, g: 0.7137255, b: 0.8431373, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.003
@@ -44066,7 +44066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09713947, y: -0, z: -0, w: 0.99527085}
+  m_LocalRotation: {x: 0.09713946, y: -0, z: -0, w: 0.99527085}
   m_LocalPosition: {x: 521.39404, y: 21.149141, z: 131.07915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44151,7 +44151,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -75924,7 +75924,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh79194
+  m_Name: pb_Mesh335906
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -97376,7 +97376,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78470
+  m_Name: pb_Mesh335182
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -102952,15 +102952,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.055985224
+      value: 0.055985227
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 2.1144896e-23
+      value: 1.4531022e-16
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.4731876e-24
+      value: 1.9654824e-17
       objectReference: {fileID: 0}
     - target: {fileID: 6826481650084533979, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_Name
@@ -103012,7 +103012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9216871339272433069, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09713946
+      value: 0.097139455
       objectReference: {fileID: 0}
     - target: {fileID: 9216871339272433069, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
