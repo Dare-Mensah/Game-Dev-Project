@@ -55,10 +55,6 @@ public class Timer : MonoBehaviour
     //a position in the Unity game space
     Vector3 originalPos;
 
-    public GameObject WinLight;
-
-    public GameObject LoseLight;
-
 
     // Start is called before the first frame update
     void Start()
@@ -92,7 +88,7 @@ public class Timer : MonoBehaviour
             puzzleStart.SetActive(false);
             currNPC.SetActive(false);
             nextNPC.SetActive(true);
-            WinLight.SetActive(true);
+
 
 
 
@@ -110,7 +106,6 @@ public class Timer : MonoBehaviour
             puzzleStart.SetActive(false);
             altPlatform.SetActive(true);
             BuySlot.SetActive(true);
-            LoseLight.SetActive(true);
 
         }
 
