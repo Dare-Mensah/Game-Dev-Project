@@ -21043,11 +21043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4512081116803665811, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512081116803665811, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6472736750225796416, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_Pivot.x
@@ -21131,15 +21131,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8598457521920288632, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8598457521920288632, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8598457521920288632, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9135526796511834765, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33043,7 +33043,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.6
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -43906,7 +43906,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09713946, y: -0, z: -0, w: 0.99527085}
+  m_LocalRotation: {x: 0.09713947, y: -0, z: -0, w: 0.99527085}
   m_LocalPosition: {x: 521.39404, y: 21.149141, z: 131.07915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -68229,7 +68229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 1271226984}
   currentTime: 0
-  startingTime: 100
+  startingTime: 60
   WinText: {fileID: 1323892640}
   player: {fileID: 1062236033}
   playerCam: {fileID: 1155712440}
@@ -92793,6 +92793,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8781346395107476918, guid: 8045e47f6fd95644daff67839a060154, type: 3}
   m_PrefabInstance: {fileID: 1902510991}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2003643128 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6343480924819272559, guid: 8045e47f6fd95644daff67839a060154, type: 3}
+  m_PrefabInstance: {fileID: 1902510991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2004222555 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 196700, guid: 7a7ada80b7910bb47aa7c5434361abb6, type: 3}
@@ -102054,7 +102065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &537131679403016968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102625,15 +102636,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.05598522
+      value: 0.055985216
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000003719448
+      value: -0.0000000045974895
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.0856122e-10
+      value: 2.5779576e-10
       objectReference: {fileID: 0}
     - target: {fileID: 6826481650084533979, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_Name
@@ -102685,7 +102696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9216871339272433069, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.097139455
+      value: 0.09713946
       objectReference: {fileID: 0}
     - target: {fileID: 9216871339272433069, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
@@ -103580,7 +103591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 169d496d31e65e84f8e8acfa92575572, type: 2}
-  resolutionDropdown: {fileID: 0}
+  resolutionDropdown: {fileID: 2003643128}
 --- !u!114 &5711734854122106740
 MonoBehaviour:
   m_ObjectHideFlags: 0

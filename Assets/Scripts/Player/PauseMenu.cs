@@ -55,7 +55,7 @@ public class PauseMenu : MonoBehaviour
     public void GoToMainMenu()
     { //this public method allows for the ability to navigate to the main menu page
         Time.timeScale = 1f; //the time scale is reset to 1 to therefore ensure the main menu works as intended
-        SceneManager.LoadScene("StartScreen"); //this allows for the starting screen scene to be successfully loaded
+        Initiate.Fade("StartScreen", Color.black, 1); //this allows for the starting screen scene to be successfully loaded
     }
 
     public void QuitGame()
