@@ -6,3 +6,4 @@ https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-cus
 https://assetstore.unity.com/packages/3d/environments/low-poly-rock-pack-57874
 https://assetstore.unity.com/packages/2d/gui/icons/2d-casual-ui-hd-82080
 https://assetstore.unity.com/packages/3d/environments/lowpoly-environment-nature-free-medieval-fantasy-series-187052
+https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753
