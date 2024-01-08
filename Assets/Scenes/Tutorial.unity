@@ -21155,11 +21155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4512081116803665811, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512081116803665811, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6472736750225796416, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_Pivot.x
@@ -21243,15 +21243,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8598457521920288632, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8598457521920288632, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8598457521920288632, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9135526796511834765, guid: 23bade4a499a851458e94d612387d8c1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44065,7 +44065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09713946, y: -0, z: -0, w: 0.99527085}
+  m_LocalRotation: {x: 0.09713947, y: -0, z: -0, w: 0.99527085}
   m_LocalPosition: {x: 521.39404, y: 21.149141, z: 131.07915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -84085,6 +84085,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2592050388660471550, guid: 86032b6be5b815b4da1ba1b3b7ba4c5b, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5692173971769003846}
+    - target: {fileID: 2592050388660471550, guid: 86032b6be5b815b4da1ba1b3b7ba4c5b, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetFullScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 3801196485278171597, guid: 86032b6be5b815b4da1ba1b3b7ba4c5b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -102559,7 +102567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &537131679403016968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103130,15 +103138,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.055985216
+      value: 0.055985224
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000045974895
+      value: 2.1144896e-23
       objectReference: {fileID: 0}
     - target: {fileID: 5291183537489538873, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.5779576e-10
+      value: -2.4731876e-24
       objectReference: {fileID: 0}
     - target: {fileID: 6826481650084533979, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_Name
@@ -103190,7 +103198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9216871339272433069, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.097139455
+      value: 0.09713946
       objectReference: {fileID: 0}
     - target: {fileID: 9216871339272433069, guid: 1939d17ada00df6408b44609890a1659, type: 3}
       propertyPath: m_LocalRotation.y
